@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-15</title>
+</head>
+<body>
+
+<script>
+    for (var i = 2; i < 11; i++) {
+        if (i % 2 != 0) continue;
+        alert(i);
+    }
+</script>
+
+<script>
+    var j = 0;
+    while (j < 3) {
+        alert('номер ' + j + '!')
+        j++;
+    }
+</script>
+
+<script>
+    var num = 0;
+    while (num <=100 && num != null) {
+        num = prompt ('Введите число больше 100:');
+    }
+</script>
+
+<script>
+    outer: for (var n = 2; n < 10; n++) {
+        for (var m = 2; m < n; m++) {
+            if (n % m ==0) continue outer;
+        }
+        alert (n);
+    }
+</script>
+</body>
+</html>
