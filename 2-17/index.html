@@ -25,10 +25,11 @@
 <script>
     var x = prompt('Enter x:');
     var n = parseInt(prompt('Enter n:'), 10);
-    var calcPow;
     function pow(x, n) {
-        calcPow = Math.pow(x, n);
-        return (calcPow);
+        for (var result = 1; n > 0; n--) {
+            result = result * x;
+        }
+        return (result);
     }
     if (n < 0) {
         alert ('n must be > 0');
