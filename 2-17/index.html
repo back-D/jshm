@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-17</title>
+</head>
+<body>
+
+<script>
+    function checkAge(age) {
+        return (age > 18) ? true : confirm('Родители разрешили?');
+        // return (age > 18) || confirm('Родители разрешили?');
+    }
+</script>
+
+
+<script>
+    function min(a, b) {
+        var minimal;
+        return (a < b) ? minimal = a : minimal = b;
+    }
+</script>
+
+
+<script>
+    var x = prompt('Enter x:');
+    var n = parseInt(prompt('Enter n:'), 10);
+    var calcPow;
+    function pow(x, n) {
+        calcPow = Math.pow(x, n);
+        return (calcPow);
+    }
+    if (n < 0) {
+        alert ('n must be > 0');
+    } else {
+        alert(pow(x,n));
+    }
+
+</script>
+
+</body>
+</html>
