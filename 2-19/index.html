@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-19</title>
+</head>
+<body>
+
+<script>
+    function sumTo1(n) {
+        var result = n;
+        for (var i = 1; i < n; i++) {
+            result = result + i;
+        }
+        return result;
+    }
+
+    function sumTo2(n) {
+        if (n > 1) {
+            return n + sumTo2 (n - 1);
+        } else {
+            return n;
+        }
+    }
+
+    function sumTo3(n) {
+        n = (1 + n) * n / 2;
+        return n;
+    }
+
+</script>
+
+<script>
+    function factorial(n) {
+        if (n > 1) {
+            return n * factorial(n - 1)
+        } else {
+            return n;
+        }
+    }
+</script>
+
+<script>
+    function fib(n) {
+        var a = 1;
+        var b = 0;
+        var result;
+        for (var i = 1; i <= n; i++) {
+            result = a + b;
+            a = b;
+            b = result;
+        }
+        return result;
+    }
+</script>
+
+
+</body>
+</html>
